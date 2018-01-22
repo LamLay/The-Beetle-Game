@@ -3,18 +3,18 @@
 For this project you will create a simulation of the "Beetle" dice game.
 
 > Beetle is a British party game in which one draws a beetle in parts. The game may be played solely with pen, paper and a die or using a commercial game set, some of which contain custom scorepads and dice and others which contain pieces which snap together to make a beetle/bug. It is sometimes called Cooties or Bugs. The game is entirely based on random die rolls, with no skill involved.
-
-> ###Playing
-
+> 
+> PLAYING
+> 
 > The part drawn is decided by the roll of a die. The traditional rolls are:
-
+> 
 > * 6 is for the body, of which there is one.
-* 5 is for the head, of which there is one.
-* 4 is for the wings, of which there are two.
-* 3 is for a leg, of which there are six.
-* 2 is for an antenna, of which there are two.
-* 1 is for an eye, of which there are two.
-
+> * 5 is for the head, of which there is one.
+> * 4 is for the wings, of which there are two.
+> * 3 is for a leg, of which there are six.
+> * 2 is for an antenna, of which there are two.
+> * 1 is for an eye, of which there are two.
+> 
 > It is necessary to roll the correct number for the body before any other part may be drawn. To the body, one may attach the head, legs or wings, but the head must precede the antenna and eyes. The first player to draw all the requisite parts is the winner.
 
 -- From [wikipedia.org](https://en.wikipedia.org/wiki/Beetle_(game)#/media/File:Beetle_Drive_Beetle.JPG)
