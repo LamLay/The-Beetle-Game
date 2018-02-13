@@ -10,7 +10,7 @@
 #ifndef DICE_H
 #define DICE_H
 #include <string>   // for string
-#include <vector>
+#include <vector>   // for vector
 #include "Beetle.h"
 using namespace std;
 
@@ -18,14 +18,6 @@ using namespace std;
 class Dice {
 	public: 
 		Dice (int seed);
-		
-		// Dice (int seed) {
-		// 	int seed;
-		// 	cout << "What is the seed?" << endl;
-		// 	cin >> seed;
-		// 	srand(seed);
-		// }
-		
 		int rollADi(); 
 
 };		

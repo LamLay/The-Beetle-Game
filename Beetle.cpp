@@ -6,10 +6,10 @@
  * 
  */
 
-#include <string>   // for string
+#include <string>    // for string
 #include <iostream>  // for cin and cout
 #include <stdlib.h>  // for exit
-#include <vector> // for vector
+#include <vector>    // for vector
 #include "Beetle.h"
 #include "Dice.h"
 using namespace std;
@@ -29,8 +29,6 @@ Beetle::Beetle(string newPlayerName) {
     eye = 0;
 }
 
-//int winner = -1;
-
 void Beetle::checkTheDi(int diceNumber) {
     if (diceNumber == 6 && body < 1 && head < 1) // body beofre head
         body ++;
@@ -46,15 +44,6 @@ void Beetle::checkTheDi(int diceNumber) {
         eye++;
 }
 
-
-// void Beetle::completeBeetle(vector <Beetle> beetles) {
-//     if (body == 1 && head == 1 && wing == 2 && leg == 4 && antenna == 2 && eye == 2) {
-//         winner = beetles.at(i); //???????????????????
-//         cout << "The winner is "  << beetles.at(i).getPlayerName() << endl;
-//     } // true/false or static winner variables
-    
-// }
-
 bool Beetle::completeBeetle() {
     if (body == 1 && head == 1 && wing == 2 && leg == 4 && antenna == 2 && eye == 2) 
         return true;
@@ -65,4 +54,11 @@ bool Beetle::completeBeetle() {
 void Beetle::countTurns() {
     numberOfTurns++;
 }
+
+string Beetle::getPlayerName() {
+    return playerName;
+}
     
+int Beetle::getTurn() {
+    return numberOfTurns; 
+}

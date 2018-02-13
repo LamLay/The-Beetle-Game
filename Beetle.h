@@ -10,7 +10,7 @@
 #ifndef BEETLE_H
 #define BEETLE_H
 #include <string>   // for string
-#include <vector>
+#include <vector>   // for vector
 #include "Dice.h"
 using namespace std;
 
@@ -21,9 +21,8 @@ class Beetle {
         Beetle(string newPlayerName);
         bool completeBeetle();
         
-        string getPlayerName(){
-            return playerName;
-        }
+        string getPlayerName();
+        int getTurn();
         void checkTheDi(int diceNumber);
         void countTurns();
         
@@ -35,7 +34,6 @@ class Beetle {
         int antenna;
         int eye;
         string playerName;
-        //static int winner;
         int numberOfTurns;
 };        
         

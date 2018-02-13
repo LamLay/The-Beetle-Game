@@ -6,10 +6,10 @@
  * 
  */
 
-#include <string>   // for string
+#include <string>    // for string
 #include <iostream>  // for cin and cout
 #include <stdlib.h>  // for exit
-#include <vector> // for vector
+#include <vector>    // for vector
 #include "Beetle.h"
 #include "Dice.h"
 using namespace std;
