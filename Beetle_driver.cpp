@@ -49,7 +49,6 @@ int main() {
             cout << "What is the player" << i << "'s name?"  << endl;
             cin >> playerName;
             beetles.push_back(Beetle(playerName)); 
-            cout << "Line 51" << endl;
         }
         cout << "Line 53"<<endl;
     }    

@@ -27,6 +27,7 @@ Beetle::Beetle(string newPlayerName) {
     leg = 0;
     antenna = 0;
     eye = 0;
+    numberOfTurns = 0;
 }
 
 void Beetle::checkTheDi(int diceNumber) {
