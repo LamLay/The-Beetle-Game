@@ -16,19 +16,16 @@ using namespace std;
 int main() {
     char choice;
     int numberOfPlayers;
-    //int numberOfTurns = 0;;
     int seed;
     Dice number(seed);
-    
-    //vector<string> players;
     vector<Beetle> beetles;
-    //beetles.push_back(Beetle(numberOfTurns)); 
+    
     
     cout << "Do you want to start the Beetle dice game?" <<endl;
     cout << "Press Y for 'Yes' and N for 'No'." << endl;
     cin >> choice; 
     
-    // check for invalid input ?????????????
+    // check for invalid input 
     while(choice != 'Y' && choice != 'N') {
       cin.clear();
       cin.ignore();
