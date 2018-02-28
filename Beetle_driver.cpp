@@ -13,6 +13,9 @@
 #include "Dice.h"
 using namespace std;
 
+/*====================================================================
+ * Main program
+ */
 int main() {
     char choice;
     int numberOfPlayers;
@@ -47,33 +50,28 @@ int main() {
             cin >> playerName;
             beetles.push_back(Beetle(playerName)); 
         }
-        cout << "Line 53"<<endl;
     }    
     else 
         return 0;
-    cout << "Line 57" << endl;    
-    
+   
     bool winner = false;
-    cout<<"Line 68" << endl;
     int i;
+    //Start playing and decide the winner
     do { 
-        cout<<"Line 70" << endl;
-        
         for (i=0; i < numberOfPlayers && winner == false; i++) {
-            cout<<"Line 72" << endl;
             beetles[i].checkTheDi(number.rollADi());
             beetles[i].countTurns();
             
             if (beetles[i].completeBeetle() == true) {
+                cout << "***********************************************" << endl;
                 cout << "BEETLE! BEETLE! BEETLE!" << endl;
                 cout << "The winner is " << beetles.at(i).getPlayerName() << endl;
                 cout << "The game is finished in " << beetles.at(i).getTurn() << " turns" << endl;
                 winner = true;  
-                cout << "Value of winner at line 83 is " << winner << endl;
             }
         }
     } while (winner == false);
-    
+    cout << "***********************************************" << endl;
     cout << "Thank you for playing Beetle!" << endl;
     
     return 0;
